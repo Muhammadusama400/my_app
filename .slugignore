@@ -2,3 +2,6 @@ node_modules/
 tests/
 .git/
 .vscode/
+*.log
+docs/
+
