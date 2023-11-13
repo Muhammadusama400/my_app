@@ -1,0 +1,39 @@
+<!-- result.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF QA App Result</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            text-align: center;
+            padding: 20px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 18px;
+        }
+
+        img.logo {
+            height: 80px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Question: {{ question }}</h2>
+    <p>Predicted Answer: {{ predicted_answer }}</p>
+    <img class="logo" src="{{ url_for('static', filename='logo1.png') }}" alt="Logo 1">
+    <img class="logo" src="{{ url_for('static', filename='logo2.png') }}" alt="Logo 2">
+</body>
+</html>
